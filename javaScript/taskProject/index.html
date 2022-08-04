@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product App</title>
+        <!-- Utilizamos bootstrap para los estilos -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+        <!-- Barra de navegacion -->
+        <nav class="navbar navbar-light bg-light">
+            <a href="/" class="navbar-brand">
+                Product App
+            </a>
+        </nav>
+
+        <div class="container">
+            <!-- Esta es la aplicacion en si -->
+            <div id="App" class="row pt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Add A Product</h4>
+                        </div>
+                        <!-- Formulario -->
+                        <form id="product-form" class="card-body">
+                            <!-- Div e input para ingresar el nombre del producto -->
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="name" placeholder="Product Name">
+                            </div>
+                            <br>
+                            <!-- Div e input para ingresar el precio del producto -->
+                            <div class="form-group">
+                                <input class="form-control" type="number" step="0.01" id="price" placeholder="Product Price">
+                            </div>
+                            <br>
+                            <!-- Div e input para ingresar el año del producto -->
+                            <div class="form-group">
+                                <input class="form-control" type="number" id="year" min="1900" value="2022" placeholder="Product Year">
+                            </div>
+                            <br>
+                            <!-- Div e input para el boton de guardar -->
+                            <div class="d-grid gap-2">
+                                <input class="btn btn-primary btn-block" type="submit" value="Save">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Contenedor de la lista de productos -->
+                <div id="product-list" class="col-md-8">
+
+                </div>
+            </div>
+        </div>
+        <!-- Se importa el javaScript -->
+        <script src="app.js"></script>
+    </body>
+</html>
