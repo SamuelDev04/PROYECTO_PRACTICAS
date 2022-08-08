@@ -1,5 +1,4 @@
-/* Estilos para la pagina y los contenedores */
-
+/* Estilos para toda la pagina como tal */
 * {
     padding: 0;
     margin: 0;
@@ -7,10 +6,12 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* Estilos para el color de la pagina */
 body {
     background-color: #3d64e6;
 }
 
+/* Estilos para el contenedor */
 .container {
     background-color: #ffffff;
     width: 80vw;
@@ -24,12 +25,14 @@ body {
     box-shadow: 0 1.5em 1.8em rgba(8, 21, 65, 0.25);
 }
 
+/* Estilos para el contenedor para buscar */
 .search-wrapper {
     display: grid;
     grid-template-columns: 9fr 3fr;
     gap: 1.25em;
 }
 
+/* Estilos para el boton en el contenedor para buscar */
 .search-wrapper button {
     font-size: 1em;
     background-color: #3d64e6;
@@ -39,6 +42,7 @@ body {
     border-radius: 1.5em;
 }
 
+/* Estilos para el input en el contenedor para buscar */
 .search-wrapper input {
     font-size: 1em;
     padding: 0 0.62em;
@@ -48,10 +52,12 @@ body {
     color: #222a43;
 }
 
+/* Estilos para el contenedor de resultado */
 #result {
     margin-top: 1.25em;
 }
 
+/* Estilos para la bandera */
 .container .flag-img {
     display: block;
     width: 45%;
@@ -59,6 +65,7 @@ body {
     margin: 1.8em auto 1.2em auto;
 }
 
+/* Estilos para los textos, exactamente los h2 */
 .container h2 {
     font-weight: 600;
     color: #222a43;
@@ -68,21 +75,25 @@ body {
     margin-bottom: 1.8em;
 }
 
+/* Estilos para la informacion */
 .data-wrapper {
     margin-bottom: 1em;
     letter-spacing: 0.3px;
 }
 
+/* Estilos para los textos, exactamente los h4 */
 .container h4 {
     display: inline;
     font-weight: 500;
     color: #222a43;
 }
 
+/* Estilos para los span que esten dentro de un container */
 .container span {
     color: #5d6274;
 }
 
+/* Estilos para los textos, exactamente los h3 */
 .container h3 {
     text-align: center;
     font-size: 1.2em;
