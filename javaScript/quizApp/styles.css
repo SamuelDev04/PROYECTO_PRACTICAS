@@ -1,0 +1,100 @@
+/* Estilos para toda la pagina como tal */
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Definimos las formas que puede tomar la variable --hue */
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+/* Estilos para el cuerpo de la pagina */
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+}
+
+/* Estilos para cuando el body tenga como clase correct */
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+/* Estilos para cuando el body tenga como clase wrong */
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+
+/* Estilos para el contenedor */
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+/* Estilos para el contenedor de respuestas */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Estilos para los botones */
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+/* Estilo para cuando se le pase el mouse 
+por encima al boton (Para eso es el hover) */
+.btn:hover {
+    border-color: black;
+}
+
+/* Estilos para cuando el boton tenga como clase correct */
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+/* Estilos para cuando el boton tenga como clase wrong */
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+/* Estilos para el los botones de next y start */
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+/* Estilos para el contenedor de botones */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para la clase hide */
+.hide {
+    display: none;
+}
