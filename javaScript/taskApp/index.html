@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Task App</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Barra de navegacion -->
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <a href="#" class="navbar-brand">Task App</a>
+            </div>
+        </nav>
+
+        <!-- Contenido de la pagina -->
+        <div class="container">
+            <div class="row pt-5">
+                <!-- Para la tabla de ingreso de informacion -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Formulario de ingreso de informacion -->
+                            <form action="" id="formTask">
+                                <!-- div para el titulo de la tarea -->
+                                <div class="form-group">
+                                    <input type="text" id="title" placeholder="Add a to do" class="form-control">
+                                </div>
+                                <!-- div para agregar la descipcion de la tarea -->
+                                <div class="form-group pt-3">
+                                    <textarea id="description" cols="80" rows="8" 
+                                    class="form-control" placeholder="Add a description"></textarea>
+                                </div>
+                                <!-- div para el boton de guardar -->
+                                <div class="d-grid gap-2 pt-3">
+                                    <button type="submit" class="btn btn-primary btn-block">
+                                        Save
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Para mostrar la informacion -->
+                <div class="col-md-8">
+                    <!-- Con este div interactuamos en js -->
+                    <div id="tasks"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enlazamos el javascript -->
+        <script src="app.js"></script>
+    </body>
+</html>
+
+
+
+
+
